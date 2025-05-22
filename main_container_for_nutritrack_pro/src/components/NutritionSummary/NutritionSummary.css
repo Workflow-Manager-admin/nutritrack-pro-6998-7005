@@ -1,0 +1,177 @@
+.nutrition-summary {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.summary-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.macro-distribution {
+  margin-bottom: 24px;
+}
+
+.distribution-bars {
+  height: 16px;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.distribution-segment {
+  height: 100%;
+}
+
+.protein-segment {
+  background-color: #4a90e2;
+}
+
+.carbs-segment {
+  background-color: #50e3c2;
+}
+
+.fats-segment {
+  background-color: #f5a623;
+}
+
+.distribution-legend {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.protein-color {
+  background-color: #4a90e2;
+}
+
+.carbs-color {
+  background-color: #50e3c2;
+}
+
+.fats-color {
+  background-color: #f5a623;
+}
+
+.legend-text {
+  color: var(--text-secondary);
+}
+
+.nutrient-progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.nutrient-progress {
+  width: 100%;
+}
+
+.nutrient-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 6px;
+}
+
+.nutrient-name {
+  margin: 0 0 2px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nutrient-values {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+.nutrient-current {
+  font-weight: 500;
+}
+
+.nutrient-separator, .nutrient-target {
+  color: var(--text-secondary);
+}
+
+.nutrient-remaining {
+  text-align: right;
+  font-size: 0.85rem;
+}
+
+.remaining-label {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  margin-bottom: 1px;
+}
+
+.progress-bar-container {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.additional-nutrients {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.additional-heading {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.nutrients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.mini-nutrient {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mini-nutrient-name {
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+  font-size: 0.8rem;
+}
+
+.mini-nutrient-value {
+  font-weight: 500;
+}
