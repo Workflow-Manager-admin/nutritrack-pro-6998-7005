@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/nutritrack-pro-6998-7005/main_container_for_nutritrack_pro"
+}
