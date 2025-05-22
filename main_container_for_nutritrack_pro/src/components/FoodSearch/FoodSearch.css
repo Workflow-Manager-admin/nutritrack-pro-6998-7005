@@ -1,0 +1,123 @@
+.food-search-container {
+  position: relative;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.food-search-input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+
+.food-search-input {
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px 12px;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.food-search-input:focus {
+  outline: none;
+  border-color: var(--kavia-orange);
+}
+
+.serving-size-input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 0 8px;
+  width: 100px;
+}
+
+.serving-size-input {
+  background: transparent;
+  border: none;
+  padding: 10px 0;
+  width: 60px;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.serving-size-input:focus {
+  outline: none;
+}
+
+.serving-unit {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-left: 2px;
+}
+
+.add-food-btn {
+  background-color: var(--kavia-orange);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.add-food-btn:hover:not(:disabled) {
+  background-color: #FF8B4D;
+}
+
+.add-food-btn:disabled {
+  background-color: #8b5a43;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  background: var(--kavia-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.food-result {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.food-result:last-child {
+  border-bottom: none;
+}
+
+.food-result:hover, .food-result.selected {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.food-result-name {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.food-result-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.food-calories {
+  font-weight: 500;
+  color: var(--kavia-orange);
+}
